@@ -8,11 +8,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-      moreLesson6();
+        Demo();
+      //moreLesson6();
         //Lesson6Examples();
         //Lesson5Examples();
       //houseExample();
+    }
+    public static void Demo(){
+      int  i = 5;
+        System.out.println("The value of i is+i "+i);
+        i = i+1;
+        System.out.println("The value of i is+i"+i);
     }
 
 

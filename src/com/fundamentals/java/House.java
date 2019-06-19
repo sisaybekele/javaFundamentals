@@ -5,7 +5,7 @@ package com.fundamentals.java;
 
 public class House {
 
-  String roofType;
+  String roofType;// This describes a type of roof
   int windowSize;
   String foundation;
   String doorColor;

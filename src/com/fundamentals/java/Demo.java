@@ -7,5 +7,7 @@ public class Demo {
         int i = 5;
         //Displaying the variable
         System.out.println("The value of i is+i"+i);
+         i = i+1;
+        System.out.println("The value of i is+i"+i);
     }
 }
