@@ -9,13 +9,43 @@ public class Main {
     public static void main(String[] args) {
 
 
-        lessone5Examples();
+      moreLesson6();
+        //Lesson6Examples();
+        //Lesson5Examples();
       //houseExample();
-
     }
 
 
+    public static void moreLesson6(){
+        Lesson6 myOtherLesson6 = new Lesson6();
+        myOtherLesson6.exampleBuilder("Spaghetti" , 2);
+        myOtherLesson6.exampleChar();
+        myOtherLesson6.exampleEscape();
+    }
+public static void Lesson6Examples() {
+    Lesson6 myLesson6 = new Lesson6();
+
+
+    myLesson6.exampleCharAt();
+    myLesson6.exampleConcat( " has awesome donuts");
+    myLesson6.exampleEquals("LaMars");
+    String myLower = myLesson6.examplelowercase();
+    System.out.println(myLower);
+    String myUpper = myLesson6.exampleUpperCase();
+    System.out.println(myUpper);
+    myLesson6.exampleLength();
+    }
+
+
+
+
+
+
+
+
+
     public static void lessone5Examples(){
+
      Lesson5 mylesson5 = new Lesson5();
         mylesson5.showLocalExample();
        mylesson5.showLocalWithparameter(10,12);
