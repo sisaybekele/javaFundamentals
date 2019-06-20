@@ -88,7 +88,7 @@ public class Lesson7 {
 
     }
 
-    public  void  exampleIncriment(){
+    public  void  exampleIncrement(){
                                         //Increment method of variable
         int home = 10, jump, car;
         jump = home++;              // the Answer is 10
