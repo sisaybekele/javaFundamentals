@@ -5,7 +5,7 @@ package com.fundamentals.java;
     * control Flow statements
     * */
     public class Lesson8 {
-
+                 //basic if example
         public void  basicIfExample(int value1, int value2){
             System.out.println("Before if Statement");
             if (value1==value2){
@@ -13,7 +13,7 @@ package com.fundamentals.java;
             }
             System.out.println("After if Statement");
         }
-
+              //basic if else example
         public void basicIfElseExample(int alpha, int beta) {
             System.out.println("Before if statement");
             if (alpha != beta) {
@@ -23,7 +23,7 @@ package com.fundamentals.java;
             }
             System.out.println("End of if statement");
         }
-
+           //basic is else chain example
             public void basicIfElseChainExample(int charlie) {
                 System.out.println("Before if statement");
                 if (charlie< 30){
@@ -35,7 +35,7 @@ package com.fundamentals.java;
                 }
                 System.out.println("end of if statement");
         }//end method
-
+                //basic  if and or example
         public void basicIfAndOrExample(int delta){
             System.out.println("Before if statement");
             if(delta> 100 ||delta< 50){
