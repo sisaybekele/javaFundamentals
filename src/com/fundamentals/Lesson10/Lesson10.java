@@ -12,4 +12,5 @@ public class Lesson10 {
         System.out.println("Show protected lesson");
     }//end method
 
+
 }// end class

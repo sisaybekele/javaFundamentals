@@ -8,6 +8,9 @@ package com.fundamentals.java;
 public class Lesson6 {
 
     String myString = "LaMars";
+    private  void  examplePrivate(){
+        System.out.println("This is private method");
+    }
     //Method shows string method for charAt
  public void  exampleCharAt(){
      char myChar = myString.charAt(2);

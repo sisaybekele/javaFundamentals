@@ -1,13 +1,35 @@
 package com.fundamentals.java;
 import com.fundamentals.Lesson10.Lesson10;
+import com.fundamentals.TruckExample;
 /*
 * This Class is the String class of this project
 * This is the example of a multiple comment.
  */
 
 public class Main {
-    public static void main(String[] args) {
-    Lesson10Example();
+
+    public static int num = 0;
+
+    static {
+        System.out.println("static block 1");
+        num = 42;
+    }
+    static {
+       System.out.println("static block 2");
+       num = 62;
+    }//end static block
+    public static void main(String[] args){
+        Lesson15Example();
+//Lesson14Example();
+        //gradeExample();
+        //gradeExample2();
+
+        //SUVExample();
+        //Lesson12Example();
+        //TruckExample();
+        //Lesson11Example();
+
+    //Lesson10Example();
    //Lesson9Example();
         //BeerSong();
         // lesson8Example2();
@@ -19,15 +41,83 @@ public class Main {
         //Lesson5Examples();
         //houseExample();
     }//end main method
+    public  static  void Lesson15Example() {
+        int[] myKes = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        Blackberry myBlackBerry = new Blackberry(25, myKes, 0, "Color Screen");
+        myBlackBerry.recieveCall();
+        AbstractCellPhone myOldphone = new Blackberry(30, myKes, 1, "monochrome");
+        myOldphone.recieveCall();
+        myOldphone.endCall();
+
+    }
+
+    public static void  Lesson14Example(){
+      //Lesson14.MY_FIRST_FINAL =10;// can not change value of a final
+      int total = Lesson14.MY_FIRST_FINAL * 35;
+      System.out.println(total);
+      //can change the value of a non final static
+        Lesson14.myFirstStatic = 98; // original is 35
+        System.out.println(Lesson14.myFirstStatic);
+        Lesson14.setMyFirstStaticMethod(10);
+        System.out.println("block number was"+num);
+        Lesson14.MyInnerClass test = new Lesson14.MyInnerClass();
+        test.MyInnerMethod();
+
+
+    }
+    public static void gradeExample(){
+        Lab3 myLab3 = new Lab3();
+        myLab3.gradeExample();
+    }
+    public static void gradeExample2() {
+        Lab3 myLab3 = new Lab3();
+        myLab3.gradeExample2();
+    }
+
+    public static void SUVExample(){
+        SUV mySUV = new SUV(7);
+        System.out.println(mySUV.getPassengerSeats());
+
+    }
+
+    public static void Lesson12Example(){
+
+        Condo myCondo = new Condo();
+        myCondo.doorOpenClose();
+        Condo mySecondCondo = new Condo("railing","Orange",30,"composite","steel");
+        System.out.println(mySecondCondo.getDoorColor());
+    }
+   public static void TruckExample() {
+        TruckExample myTruckExample = new TruckExample("chrome","Tinted","Short","Hunter Green");
+myTruckExample.setColor("black");
+System.out.println(myTruckExample.getWheels());
+System.out.println(myTruckExample.getWindows());
+System.out.println(myTruckExample.getBoxBed());
+System.out.println(myTruckExample.getColor());
+
+
+
+
+        }
+
+    public static void Lesson11Example(){
+        House house1 = new House();
+
+        House house2 = new House(" white");
+    }
 
     public static void Lesson10Example(){
         //try to see a private method in another class.
+        Lesson6 myLesson6 = new Lesson6();
+        //myLesson6.examplePrivate();//can not access
+
         BottlesOfBeerSong song = new BottlesOfBeerSong();
         //song.Lesson10Private();//can not access
         Lesson10 myLesson = new Lesson10();
         //myLesson.ShowLesson();//can not access
        // myLesson.ShowProtected();//can not access
     }
+
 
     public static void Lesson9Example(){
         Lesson9  myLesson9= new Lesson9();

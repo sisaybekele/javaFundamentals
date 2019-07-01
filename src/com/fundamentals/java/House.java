@@ -1,11 +1,9 @@
 package com.fundamentals.java;
 
-import com.sun.deploy.uitoolkit.Window;
-
 /*
 *This is our first class that we create ourselves.
  **/
-public class House {
+public class House implements myFirstInterface {
 
     private String roofType;// This describes a type of roof
  private int windowSize;
@@ -21,15 +19,13 @@ System.out.println("This is the default constructor");
   }
 
   public House(String doorColor,int WindowSize,String foundation,String roofType){
-      this.doorColor = doorColor;
-      this.windowSize = WindowSize;
-      this.foundation = foundation;
-      this.roofType = roofType;
+      this.setDoorColor(doorColor);
+      this.setWindowSize(WindowSize);
+      this.setFoundation(foundation);
+      this.setRoofType(roofType);
   }
-
-
   public  void  SetRoofType(String roofType){
-      this.roofType = roofType;
+      this.setRoofType(roofType);
   }
 
     public String getRoofType() {
@@ -42,5 +38,41 @@ System.out.println("This is the default constructor");
       System.out.println("Close my door");
       System.out.println("Red");
   }
+  public void  doorOpenClose(String message){
+      System.out.println(message);
+  }
 
+
+    public String getDoorColor() {
+        return doorColor;
+    }
+
+    public void setDoorColor(String doorColor) {
+        this.doorColor = doorColor;
+    }
+
+    public void setRoofType(String roofType) {
+        this.roofType = roofType;
+    }
+
+    public int getWindowSize() {
+        return windowSize;
+    }
+
+    public void setWindowSize(int windowSize) {
+        this.windowSize = windowSize;
+    }
+
+    public String getFoundation() {
+        return foundation;
+    }
+
+    public void setFoundation(String foundation) {
+        this.foundation = foundation;
+    }
+
+    @Override
+    public void endCall() {
+
+    }
 }
